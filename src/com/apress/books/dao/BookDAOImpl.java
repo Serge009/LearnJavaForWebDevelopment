@@ -21,7 +21,7 @@ public class BookDAOImpl implements BookDAO {
 
     private Connection getConnection() throws SQLException {
         return DriverManager.getConnection("jdbc:mysql://localhost:3306/books",
-                "root", "password");
+                "root", "");
     }
 
     private void closeConnection(Connection connection) {
